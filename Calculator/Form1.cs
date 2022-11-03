@@ -10,7 +10,11 @@ namespace Calculator
         private void button2_Click(object sender, EventArgs e)
         {
             int a, b, ketQua;
+
             if (txtA.Text != String.Empty)
+
+            if (txtA.Text != String.Empty && txtB.Text != String.Empty)
+
             {
                 a = int.Parse(txtA.Text);
                 b = int.Parse(txtB.Text);
