@@ -34,6 +34,8 @@
             this.txtB = new System.Windows.Forms.TextBox();
             this.txtA = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.txtKetQua = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -89,12 +91,32 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "+";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // txtKetQua
+            // 
+            this.txtKetQua.Location = new System.Drawing.Point(207, 285);
+            this.txtKetQua.Name = "txtKetQua";
+            this.txtKetQua.Size = new System.Drawing.Size(292, 27);
+            this.txtKetQua.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(110, 271);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 48);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Kết quả:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtKetQua);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtA);
             this.Controls.Add(this.txtB);
@@ -116,5 +138,7 @@
         private TextBox txtB;
         private TextBox txtA;
         private Button button2;
+        private TextBox txtKetQua;
+        private Label label4;
     }
 }

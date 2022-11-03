@@ -6,5 +6,14 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int a, b, ketQua;
+            a = int.Parse(txtA.Text);
+            b = int.Parse(txtB.Text);
+            ketQua = a + b;
+            txtKetQua.Text = ketQua.ToString();
+        }
     }
 }
