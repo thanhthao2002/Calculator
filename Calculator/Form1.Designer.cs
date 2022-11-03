@@ -28,12 +28,93 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(324, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(150, 48);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Tính toán";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(110, 126);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 48);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Số A:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(110, 200);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 48);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Số B:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtB
+            // 
+            this.txtB.Location = new System.Drawing.Point(207, 214);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(292, 27);
+            this.txtB.TabIndex = 2;
+            // 
+            // txtA
+            // 
+            this.txtA.Location = new System.Drawing.Point(207, 140);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(292, 27);
+            this.txtA.TabIndex = 2;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(486, 325);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(94, 82);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "+";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.txtA);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Name = "Form1";
+            this.Text = "Tính toán";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private TextBox txtB;
+        private TextBox txtA;
+        private Button button2;
     }
 }
