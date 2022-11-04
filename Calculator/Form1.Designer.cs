@@ -85,7 +85,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(486, 325);
+            this.button2.Location = new System.Drawing.Point(506, 333);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 82);
             this.button2.TabIndex = 4;
@@ -99,6 +99,7 @@
             this.txtKetQua.Name = "txtKetQua";
             this.txtKetQua.Size = new System.Drawing.Size(292, 27);
             this.txtKetQua.TabIndex = 6;
+            this.txtKetQua.TextChanged += new System.EventHandler(this.txtKetQua_TextChanged);
             // 
             // label4
             // 
